@@ -139,20 +139,15 @@
    ```bash
    docker rmi $(docker images -q)
 
-
 4. **Remove all volumes**:
    ```bash
    docker volume rm $(docker volume ls -q)
-
 
 5. **Remove dangling/unused images**:
    ```bash
    docker image prune -f
 
-
 6. **Log in to Docker Hub**:
    ```bash
    docker login
-
-
-
+   
