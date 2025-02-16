@@ -127,6 +127,16 @@
 
 ## Tips & Tricks
 
+0. **Check Running Docker Compose Projects**:
+   ```bash
+   docker ps --format "{{.Names}}" | xargs -I {} docker inspect {} --format '{{index .Config.Labels "com.docker.compose.project.working_dir"}}'
+
+0.0 **Check Compose File Path Using Labels**:
+   ```bash
+   docker inspect <ENTER-YOUR-CONTAINER-NAME> --format '{{index .Config.Labels "com.docker.compose.project.config_files"}}'
+
+
+   
 1. **Stop all running containers**:
    ```bash
    docker stop $(docker ps -q)
