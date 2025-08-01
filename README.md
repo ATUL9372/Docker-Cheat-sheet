@@ -1,14 +1,15 @@
 # Advanced Docker Commands
 
-1. **Check Running Docker Compose Projects**:
+1. **Check Running Docker Compose Projects** : 
    ```bash
    docker ps --format "{{.Names}}" | xargs -I {} docker inspect {} --format '{{index .Config.Labels "com.docker.compose.project.working_dir"}}'
+   ```
 
-2 **Check Compose File Path Using Labels**:
+2 **Check Compose File Path Using Labels** :
    ```bash
    docker inspect <ENTER-YOUR-CONTAINER-NAME> --format '{{index .Config.Labels "com.docker.compose.project.config_files"}}'
    ```
-3 **Delete All Docker Images That Start With a Specific Name**:
+3 **Delete All Docker Images That Start With a Specific Name** :
    ```bash
    docker images --format "{{.Repository}}:{{.Tag}}" | grep '^ENTER_YOUR_IMAGE_NAME' | xargs -r docker rmi -f
    ```
