@@ -54,6 +54,7 @@
 | `docker logs <container>`           | View the logs of a container.                    |
 | `docker inspect <container>`        | Get detailed information about a container.      |
 
+
 ## Networks
 
 | Command                                    | Description                                    |
@@ -62,7 +63,7 @@
 | `docker network create <network>`          | Create a new network.                          |
 | `docker network rm <network>`              | Remove a network.                              |
 | `docker network connect <network> <cont>`  | Connect a container to a network.              |
-| `docker network disconnect <network> <cont>` | Disconnect a container from a network.        |
+| `docker network disconnect <network> <cont>` | Disconnect a container from a network.       |
 
 ## Volumes
 
