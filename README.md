@@ -140,24 +140,30 @@
 1. **Stop all running containers**:
    ```bash
    docker stop $(docker ps -q)
+   ```
 
 2. **Remove all containers**:
    ```bash
    docker rm $(docker ps -aq)
+   ```
 
 3. **Remove all images**:
    ```bash
    docker rmi $(docker images -q)
+   ```
 
 4. **Remove all volumes**:
    ```bash
    docker volume rm $(docker volume ls -q)
+   ```
 
 5. **Remove dangling/unused images**:
    ```bash
    docker image prune -f
+   ```
 
 6. **Log in to Docker Hub**:
    ```bash
    docker login
+   ```
    
