@@ -1,9 +1,9 @@
 # Advanced Docker Commands
 
 1. **Check Running Docker Compose Projects** : 
-   ```bash
-   docker ps --format "{{.Names}}" | xargs -I {} docker inspect {} --format '{{index .Config.Labels "com.docker.compose.project.working_dir"}}'
-   ```
+    ```bash
+    docker ps --format "{{.Names}}" | xargs -I {} docker inspect {} --format '{{index .Config.Labels "com.docker.compose.project.working_dir"}}'
+    ```
 
 2 **Check Compose File Path Using Labels** :
    ```bash
@@ -16,7 +16,7 @@
 
 # Docker Cheatsheet
 
-## Basic Docker Commands
+## Basic Docker Commands   
 
 | Command                             | Description                                      |
 |-------------------------------------|--------------------------------------------------|
