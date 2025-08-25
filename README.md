@@ -183,4 +183,9 @@
    ```bash
    docker login
    ```
+
+7. **Force delete all custom networks**:
+   ```bash
+   docker network rm $(docker network ls -q)
+   ```
    
