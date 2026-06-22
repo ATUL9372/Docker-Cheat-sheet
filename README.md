@@ -13,6 +13,10 @@
    ```bash
    docker images --format "{{.Repository}}:{{.Tag}}" | grep '^ENTER_YOUR_IMAGE_NAME' | xargs -r docker rmi -f
    ```
+4. **Delete everything like images, networks, volumes, containers etc.** :
+```bash
+   docker system prune -a --volumes -f
+   ```
 
 # Docker Cheatsheet
 
