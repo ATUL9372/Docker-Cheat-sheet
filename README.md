@@ -17,6 +17,10 @@
 ```bash
    docker system prune -a --volumes -f
    ```
+5. **Disk Usage and Overall Overview.** :
+```bash
+   docker system df
+```
 
 # Docker Cheatsheet
 
